@@ -1,0 +1,5 @@
+#####
+# Protect the swtndx folder
+
+Options -Indexes
+IndexIgnore *

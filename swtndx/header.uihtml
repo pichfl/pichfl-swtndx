@@ -1,0 +1,98 @@
+<?php
+	//--------------------------------------
+	// swtndx - Sweet Apache Folder Listings
+	//--------------------------------------
+	
+	//Configuration
+	
+	//CSS filename (path relative to the swtndx folder)
+	$css = 'assets/default.css';
+	
+	//Should readme files be displayed as aside content?
+	$show_readme = true; //set to false if not.
+	
+	//Names for the readme
+	$readme_filenames = array(
+		'readme',
+		'README',
+		'readme.markdown',
+		'README.markdown',
+		'README.md',
+		'readme.md',
+		'README.mdown',
+		'readme.mdown'
+	);
+	
+	//Directory divider
+	$directory_divider = '<span>/</span>';
+	
+	//Footer enabled
+	//Sometimes the footer.html is ignored by the server so this script will 
+	//output incorrect HTML. You can set this variable to false, if thats the 
+	//case. This might have some impact on the look of your themes, so be 
+	//careful and check.
+	$footer = true;
+	
+	//Configuration End. Do not edit below if you don't know what you are doing.
+	//All readme files are parsed by Markdown
+	include('markdown.php');
+	$serverurl = $_SERVER['SERVER_NAME'];
+	$requesturi = $_SERVER['REQUEST_URI'];
+?><!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Index of <?php print htmlspecialchars(urldecode($serverurl . $requesturi)); ?></title>
+		<link rel="stylesheet" href="/swtndx/<?php print $css; ?>">
+		<link rel="icon" href="/swtndx/assets/favicon.ico" type="image/x-icon" />
+		<!--
+			swtndx by Florian Pichler
+			http://einserver.de/lab/swtndx/
+		-->
+		</head>
+	<body>
+		<ol><?php
+			$bread = explode("/", dirname($_SERVER['REQUEST_URI']));
+			$end = pathinfo($_SERVER['REQUEST_URI']);
+			if( !$end["basename"] ):
+		?><li class="root last"><strong><?php print $_SERVER['SERVER_NAME']; ?></strong><?php print $directory_divider; ?></li><?php 
+			else: 
+		?><li class="root"><a href="/"><?php print $_SERVER['SERVER_NAME']; ?></a><?php print $directory_divider; ?></li><?php
+			endif;
+			foreach($bread as $d => $n):
+				if( ($n != '') && ($n != '.') && ($n != '/') ):
+					$url = '';
+					for ($i = 1; $i <= $d; $i++){
+						$url .= $bread[$i] . '/';
+					}
+?><li><a href="/<?php print $url; ?>"><?php print htmlspecialchars(urldecode($n)); ?></a><?php print $directory_divider; ?></li><?php 
+				endif;
+			endforeach; 
+
+			if( $end["basename"] ):
+		?><li class="last"><strong><?php print htmlspecialchars(urldecode($end["basename"])); ?></strong><?php print $directory_divider; ?></li><?php 
+			endif; 
+			?></ol>
+
+<?php if ($show_readme): ?>
+		<aside id="readme">
+<?php
+				$index_dir = dirname($_SERVER['SCRIPT_FILENAME']);
+				$real_dir = substr($index_dir, 0, -10) . dirname($_SERVER['REQUEST_URI']);
+				$readme_file = '';
+				foreach ($readme_filenames as $filename) {
+					if (file_exists($real_dir.$filename)) {
+						$readme_file = $real_dir.$filename;
+						break;
+					} else {
+						continue;
+					}
+				}
+
+				if ($readme_file != '') {
+					print markdown(file_get_contents($readme_file));
+				}
+?>
+		</aside>
+<?php endif; ?>
+		<section>

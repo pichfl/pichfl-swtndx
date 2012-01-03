@@ -1,0 +1,76 @@
+#####
+# swtndx by Florian Pichler
+# http://einserver.de/lab/swtndx/
+
+<IfModule mod_autoindex.c>
+	# Attention: This script will, once installed in a folder, expose 
+	# any of its and its subfolders contents if you don't add additional 
+	# directives to the subfolders.
+	# If you don't want search engines to index your content, add a robots.txt
+	# like the one that comes with this package
+
+	# Set filetype for the header replacement
+	AddType         text/html .uihtml
+	# Enable PHP for it
+	# This handler will probably vary on your server! 
+	# ask your provider for the right one. 
+	# Examples: 
+	# - application/x-httpd-php
+	# - php-fcgid
+	AddHandler      php-fcgid .uihtml
+	
+	# Configure Indexing
+	# These are many settings, learn more about them here:
+	# http://httpd.apache.org/docs/current/mod/mod_autoindex.html
+	# or just leave them like that.
+	Options         +Indexes
+	Options         +MultiViews 
+	IndexOptions    +FancyIndexing
+	IndexOptions    +FoldersFirst
+	IndexOptions    +IgnoreCase
+	IndexOptions    +NameWidth=*
+	IndexOptions    +SuppressRules
+	IndexOptions    +SuppressDescription
+	IndexOptions    +SuppressColumnSorting
+	IndexOptions    +IgnoreClient
+	IndexOptions    +DescriptionWidth=0
+	IndexOptions    +XHTML
+	IndexOptions    +SuppressHTMLPreamble
+	IndexOptions    +HTMLTable
+	IndexOptions    +IconHeight=32
+	IndexOptions    +IconWidth=32
+	IndexOptions    +IconsAreLinks
+	IndexOptions    +Charset=UTF-8
+
+	# Enable header & footer replacement
+	# The header requires PHP but both files are required
+	# to be text/html, but since we made up a filetype 
+	# for the header, it can use PHP just fine.
+	# The footer doesn't process any code so it is plain html.
+	HeaderName      /swtndx/header.uihtml
+	ReadmeName      /swtndx/footer.html
+
+	# Hide some files which should not show up in the listing.
+	# You can also add your own entries, but remember this setting 
+	# will be inherited by all subfolders (as all of these settings)
+	IndexIgnore      robots.txt uberindex
+
+	# Icons
+	DefaultIcon      /swtndx/icons/document.png
+	AddIcon          /swtndx/icons/blank.png        ^^BLANKICON^^
+	AddIcon          /swtndx/icons/folder.png       ^^DIRECTORY^^
+	AddIcon          /swtndx/icons/up.png ..
+	AddIconByType    /swtndx/icons/picture.png      image/*
+	AddIconByType    /swtndx/icons/document.png     text/*
+	AddIcon          /swtndx/icons/cal.png          .ics
+	AddIcon          /swtndx/icons/flv.png          .flv .swf
+	AddIcon          /swtndx/icons/image.png        .ai .svg .eps .gif .bmp .tiff .tif .png .jpg .jpeg
+	AddIcon          /swtndx/icons/archive.png      .zip .rar .bz .tar
+	AddIcon          /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
+	AddIcon          /swtndx/icons/plugin.png       .safariextz
+	AddIcon          /swtndx/icons/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
+	
+	# Advanced: Fix symlinks - Uncomment only if you know what you are doing.
+	#Ooptions +FollowSymLinks
+	
+</IfModule>
