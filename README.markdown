@@ -26,11 +26,10 @@ Requirements
 Simple Installation
 -------------------
 
-1. Upload the swtndx folder to the folder you want to make public
-2. Also upload the **1_.htaccess** and rename it to **.htaccess**
+1. Upload the swtndx folder to the folder you want to make public (Attention: it contains a .htaccess file which might be invisble depending on your and the servers OS)
+2. Also upload the **_.htaccess** and rename it to **.htaccess** (If you already have an .htaccess in your folder, please append the contents of _.htaccess to yours)
 3. *Optional, but recommened* upload the robots.txt to lock out search engine spiders
-4. Go into uploaded swtndx folder and rename the **2_.htaccess** to **.htaccess** as well
-5. Done.
+4. Done.
 
 If it doesn't work check everything (the file that was named 1_.htaccess might contain more information for you). 
 
@@ -45,8 +44,8 @@ Advanced Instalation
 
 If you consider yourself ready for the advanced installation, you should know what to do, but here are some tipps anyway.
 
-- Upload the swtndx folder to any location on your server and use symlinks to add it to the folders you want to make public - Makes it easier to update.
-- Don't upload. Use git and clone the repository, *then* use symlinks.
+- Upload the swtndx folder to any location on your server and use symlinks to add it to the folders you want to make public - Makes it easy to update.
+- Don't upload. Use git and clone the repository, *then* use symlinks. Makes it even easier to update.
 - Don't forget to check if your Apache has follow-symlinks enabled. If it doesn't, you can uncomment a line in the .htaccess that came with swtndx, it might be able to enable it for you.
 
 
