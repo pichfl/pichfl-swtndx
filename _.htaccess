@@ -65,7 +65,7 @@
 	AddIcon          /swtndx/icons/cal.png          .ics
 	AddIcon          /swtndx/icons/flv.png          .flv .swf
 	AddIcon          /swtndx/icons/image.png        .ai .svg .eps .gif .bmp .tiff .tif .png .jpg .jpeg
-	AddIcon          /swtndx/icons/archive.png      .zip .rar .bz .tar
+	AddIcon          /swtndx/icons/package.png      .zip .rar .bz .tar .rpm .dmg
 	AddIcon          /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
 	AddIcon          /swtndx/icons/plugin.png       .safariextz
 	AddIcon          /swtndx/icons/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
