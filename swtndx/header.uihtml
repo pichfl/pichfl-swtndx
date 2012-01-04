@@ -43,13 +43,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Index of <?php print htmlspecialchars(urldecode($serverurl . $requesturi)); ?></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<link rel="stylesheet" href="/swtndx/<?php print $css; ?>">
 		<link rel="icon" href="/swtndx/assets/favicon.ico" type="image/x-icon" />
 		<!--
 			swtndx by Florian Pichler
 			http://einserver.de/lab/swtndx/
 		-->
-		</head>
+	</head>
 	<body>
 		<ol class="breadcrumb"><?php
 			$bread = explode("/", dirname($_SERVER['REQUEST_URI']));
