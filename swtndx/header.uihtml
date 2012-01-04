@@ -24,7 +24,7 @@
 	);
 	
 	//Directory divider
-	$directory_divider = '<span>/</span>';
+	$directory_divider = '<span class="divider">/</span>';
 	
 	//Footer enabled
 	//Sometimes the footer.html is ignored by the server so this script will 
@@ -51,7 +51,7 @@
 		-->
 		</head>
 	<body>
-		<ol><?php
+		<ol class="breadcrumb"><?php
 			$bread = explode("/", dirname($_SERVER['REQUEST_URI']));
 			$end = pathinfo($_SERVER['REQUEST_URI']);
 			if( !$end["basename"] ):
@@ -70,12 +70,12 @@
 			endforeach; 
 
 			if( $end["basename"] ):
-		?><li class="last"><strong><?php print htmlspecialchars(urldecode($end["basename"])); ?></strong><?php print $directory_divider; ?></li><?php 
+		?><li class="last active"><strong><?php print htmlspecialchars(urldecode($end["basename"])); ?></strong><?php print $directory_divider; ?></li><?php 
 			endif; 
 			?></ol>
 
 <?php if ($show_readme): ?>
-		<aside id="readme">
+		<aside id="readme" class="alert-message block-message info">
 <?php
 			$index_dir = dirname($_SERVER['SCRIPT_FILENAME']);
 			$real_dir = preg_replace('/swtndx$/', '', $index_dir) . dirname($_SERVER['REQUEST_URI']);

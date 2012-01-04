@@ -69,8 +69,13 @@ Thanks.
 
 swtndx is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license http://creativecommons.org/licenses/by-sa/3.0/
 
+### Icons 
 
 This script uses the Chalkwork icons set made by Dave Shea and available at http://chalkwork.com/ and are licenced under Creative Commons Attribution-NonCommercial-ShareAlike 3.0
+
+### CSS
+
+The default style uses http://twitter.github.com/bootstrap/
 
 
 ----
