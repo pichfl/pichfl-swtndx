@@ -98,6 +98,6 @@
 	endif;
 	if ($footer):
  ?>
-		<section>
+		<section class="zebra-striped">
 <?php 
 	endif; 
