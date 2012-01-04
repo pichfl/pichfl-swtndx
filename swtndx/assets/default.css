@@ -1,3 +1,4 @@
+/* swtndx default by Florian Pichler */
 /* Import Twitter Bootstrap - Feel free to put this on your server. */
 @import url(http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css);
 
@@ -51,7 +52,7 @@ body > table th+th,
 body > section > table th+th,
 body > table td+td,
 body > section > table td+td{
-	border-left:1px solid #ddd;
+	border-left: 1px solid #ddd;
 }
 
 body > table th:nth-child(3),
@@ -88,4 +89,111 @@ footer{
 
 footer a{
 	color: #ccc;
+}
+
+/* @media screen and (max-device-width: 640px){ */
+@media screen and (max-width: 640px){
+
+body > table,
+body > section > table,
+body > table tbody,
+body > section > table tbody,
+body > table tr,
+body > section > table tr,
+body > table td,
+body > section > table td,
+body > table a,
+body > section > table a{
+	position: relative;
+	display: block;
+	width: auto !important;
+	margin: 0;
+	padding: 0;
+	background-color: transparent ;
+}
+
+body > table th,
+body > section > table th{
+	display: none;
+}
+
+body > table,
+body > section > table{
+	border-top: 0;
+}
+
+html body > table td,
+html body > section > table td{
+	border: 0;
+}
+
+body > table img,
+body > section > table img{
+	margin: 0;
+}
+
+body > table td:nth-child(2) a,
+body > section > table td:nth-child(2) a{
+	border-top: 1px solid #ddd;
+	padding: 10px 6em 27px 44px;
+	word-wrap: break-word;
+}
+
+body > table td:first-child,
+body > section > table td:first-child,
+body > table td:nth-child(3),
+body > section > table td:nth-child(3),
+body > table td:nth-child(4),
+body > section > table td:nth-child(4),
+body > table td:nth-child(2) a:before,
+body > section > table td:nth-child(2) a:before{
+	position: absolute;
+	z-index: 1;
+	-webkit-user-select: none;
+	-webkit-pointer-events: none;
+	pointer-events: none;
+}
+
+body > table td:nth-child(2) a[href$="/"]:before,
+body > section > table td:nth-child(2) a[href$="/"]:before{
+	top: 13px;
+	right: 10px;
+	content: " ";
+	width: 6px;
+	height: 6px;
+	border: 3px solid #808080;
+	border-width: 3px 3px 0 0;
+	border-radius: 1px;
+	-webkit-transform: rotate(45deg);
+	z-index: 100;
+}
+
+body > table td:first-child,
+body > section > table td:first-child{
+	top: 8px;
+	left: 10px;
+	height: 24px;
+}
+
+body > table td:nth-child(3),
+body > section > table td:nth-child(3),
+body > table td:nth-child(4),
+body > section > table td:nth-child(4){
+	font-size: 11px;
+	color: #bfbfbf;
+}
+
+body > table td:nth-child(3),
+body > section > table td:nth-child(3){
+	left: 44px;
+	bottom: 9px;
+}
+
+body > table td:nth-child(4),
+body > section > table td:nth-child(4){
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+}
+	
 }
