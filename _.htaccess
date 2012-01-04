@@ -72,6 +72,7 @@
 	AddIcon          /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
 	AddIcon          /swtndx/icons/plugin.png       .safariextz
 	AddIcon          /swtndx/icons/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
+	AddIcon          /swtndx/icons/rtf.png          .pdf .rtf .doc .docx
 	
 	# Advanced: Fix symlinks - Uncomment only if you know what you are doing.
 	#Ooptions +FollowSymLinks
