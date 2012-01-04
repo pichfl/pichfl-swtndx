@@ -53,7 +53,7 @@
 	# Hide some files which should not show up in the listing.
 	# You can also add your own entries, but remember this setting 
 	# will be inherited by all subfolders (as all of these settings)
-	IndexIgnore      robots.txt uberindex
+	IndexIgnore      robots.txt swtndx
 
 	# Icons
 	DefaultIcon      /swtndx/icons/document.png
