@@ -43,7 +43,7 @@ Don't give up!
 
 
 
-Advanced Instalation
+Advanced Installation
 --------------------
 
 If you consider yourself ready for the advanced installation, you should know what to do, but here are some tipps anyway.
