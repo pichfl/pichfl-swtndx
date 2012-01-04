@@ -37,8 +37,8 @@
 	IndexOptions    +XHTML
 	IndexOptions    +SuppressHTMLPreamble
 	IndexOptions    +HTMLTable
-	IndexOptions    +IconHeight=32
-	IndexOptions    +IconWidth=32
+	IndexOptions    +IconHeight=24
+	IndexOptions    +IconWidth=24
 	IndexOptions    +IconsAreLinks
 	IndexOptions    +Charset=UTF-8
 
@@ -62,7 +62,10 @@
 	AddIcon          /swtndx/icons/up.png ..
 	AddIconByType    /swtndx/icons/picture.png      image/*
 	AddIconByType    /swtndx/icons/document.png     text/*
-	AddIcon          /swtndx/icons/cal.png          .ics
+	AddIcon          /swtndx/icons/script.png       .js
+	AddIcon          /swtndx/icons/rtf.png          .rtf
+	AddIcon          /swtndx/icons/ics.png          .ics
+	AddIcon          /swtndx/icons/vcf.png          .vcf
 	AddIcon          /swtndx/icons/flv.png          .flv .swf
 	AddIcon          /swtndx/icons/image.png        .ai .svg .eps .gif .bmp .tiff .tif .png .jpg .jpeg
 	AddIcon          /swtndx/icons/package.png      .zip .rar .bz .tar .rpm .dmg
