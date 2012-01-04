@@ -74,28 +74,30 @@
 			endif; 
 			?></ol>
 
-<?php if ($show_readme): ?>
-		<aside id="readme" class="alert-message block-message info">
-<?php
-			$index_dir = dirname($_SERVER['SCRIPT_FILENAME']);
-			$real_dir = preg_replace('/swtndx$/', '', $index_dir) . dirname($_SERVER['REQUEST_URI']);
-			$readme_file = '';
-			foreach ($readme_filenames as $filename) {
-				if (file_exists($real_dir.$filename)) {
-					$readme_file = $real_dir.$filename;
-					break;
-				} else {
-					continue;
-				}
-			}
+<?php 
+	if ($show_readme):
 
-			if ($readme_file != '') {
-				print markdown(file_get_contents($readme_file));
+		$index_dir = dirname($_SERVER['SCRIPT_FILENAME']);
+		$real_dir = preg_replace('/swtndx$/', '', $index_dir) . dirname($_SERVER['REQUEST_URI']);
+		$readme_file = '';
+		foreach ($readme_filenames as $filename) {
+			if (file_exists($real_dir.$filename)) {
+				$readme_file = $real_dir.$filename;
+				break;
+			} else {
+				continue;
 			}
+		}
+
+		if ($readme_file != '') :
 ?>
+		<aside id="readme" class="alert-message block-message info">
+<?php print markdown(file_get_contents($readme_file)); ?>
 		</aside>
 <?php 
+		endif;
 	endif;
+
 	if ($footer):
  ?>
 		<section class="zebra-striped">
