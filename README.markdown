@@ -24,6 +24,8 @@ Included Stylesheets
 - Apple OS (Mimics Finder / iOS table view) *early beta, may not work in every browser!*
 - Uberspace (Inspired by <http://uberspace.de>) *beta*
 
+To use the alternate stylesheets adjust the <code>$css</code> variable in <code>header.uihtml</code>
+
 
 
 Requirements
