@@ -1,0 +1,144 @@
+/* swtndx - Uberspace 
+   by Florian Picher - http://einserver.de - 
+   Inspired by http://uberspace.de */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: inherit;
+	font-weight: inherit;}
+
+html, body{
+	background: #fff;
+	color: #666;
+	font: 12px/20px Arial, sans-serif;}
+
+img{
+	display: block;
+	vertical-align: middle;}
+
+a{
+	text-decoration: none;
+	color: #a10300;}
+
+a:hover, a:focus, a:active{
+	color: #333;
+	-webkit-transition: color 0.25s;
+	-moz-transition: color 0.25s;
+	transition: color 0.25s;}
+
+ol{
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 2em;
+	padding: 1.0em 10% 1.0em;
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.7em;
+	background: #393939;
+	color: #b5b5b5;}
+	
+ol:after,
+table:after{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	content: " ";}
+	
+ol:after{
+	z-index: 2;
+	top: 2px;
+	height: 1px;
+	border-top: 1px dashed #757575;}
+
+li{
+	display: block;
+	float: left;
+	margin: 0 0 0 .2em;
+	list-style: none;}
+
+li span{
+	color: #808080;}
+
+li.root{
+	margin: 0;}
+
+strong{
+	color: #fff;}
+	
+ol a{
+	color: #b5b5b5;}
+
+ol a:hover, ol a:focus, ol a:active{
+	color: #fff;}
+
+table{
+	position: relative;
+	width: 80% !important;
+	margin: 0 auto;
+	table-layout: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: left;
+	color: #9b9b9b;}
+	
+table:after{
+	top: -4px;
+	height: 2px;
+	background: #cbcbcb;}
+
+td, th{
+	vertical-align: middle;
+	padding: 0.5em 1em 0.5em 1em;}
+
+tr{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;}
+	
+tr:hover td{
+	background: #eee;
+	-webkit-transition: background-color 0.15s;
+	-moz-transition: background-color 0.15s;
+	transition: background-color 0.15s;}
+	
+th:first-child,td:first-child{
+	width: 16px;}
+
+th+th+th,
+td+td+td,
+th+th+th+th,
+td+td+td+td{
+	text-align: right;
+	font-size: 0.91em;}
+	
+td+td+td+td+td{
+	display: none;}
+
+td a{
+	display: block;}
+
+footer,address{
+	display: block;
+	width: 80%;
+	margin: 4.5em auto 1em;
+	font-style: normal;
+	color: #9b9b9b;
+	text-align: right;}
+
+footer a, address a{
+	color: #9b9b9b;}
+	
+@media screen and (max-width: 640px){
+	
+	table tr th:nth-child(3),
+	table tr td:nth-child(3),
+	table tr th:nth-child(4),
+	table tr td:nth-child(4){
+		display: none;
+	}
+
+}

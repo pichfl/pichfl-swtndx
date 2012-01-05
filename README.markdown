@@ -22,6 +22,7 @@ Included Stylesheets
 
 - Default (Based on Twitter Bootstrap)
 - Apple OS (Mimics Finder / iOS table view) *early beta, may not work in every browser!*
+- Uberspace (Inspired by <http://uberspace.de>) *beta*
 
 
 
