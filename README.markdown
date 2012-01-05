@@ -13,8 +13,15 @@ Features
 
 - Adds a breadcrumb based on the path segments
 - Renders Readme files found in the current folder into a box at the beginning of the page
-- Default style based on Twitter Bootstrap (other styles coming soon)
 - Makes it easy to use your own CSS (or icons)
+
+
+
+Included Stylesheets
+--------------------
+
+- Default (Based on Twitter Bootstrap)
+- Apple OS (Mimics Finder / iOS table view) *early beta, may not work in every browser!*
 
 
 
@@ -57,6 +64,7 @@ If you consider yourself ready for the advanced installation, you should know wh
 Version History
 ---------------
 
+* v1.1 (20120106) Added early draft for new stylesheet which mimics the Mac OS X Finder and iOS
 * v1.0 (20120104) re-release under new name, updated pretty much everything
 * v0.5 Intermezzo, rewrote most of it
 * v0.3 (20100201) bugfix: weird php error
