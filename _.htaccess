@@ -17,6 +17,14 @@
 	# Examples: 
 	# - application/x-httpd-php
 	# - php-fcgid
+	# 
+	# Provider defaults:
+	## Dreamhost (by github.com/tjluoma)
+	# AddHandler application/x-httpd-php5 .uihtml
+	#
+	## Uberspace
+	# AddHandler php-fcgid .uihtml
+	#
 	AddHandler      php-fcgid .uihtml
 	
 	# Configure Indexing
