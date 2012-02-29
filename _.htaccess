@@ -64,6 +64,8 @@
 	IndexIgnore      robots.txt swtndx
 
 	# Icons
+	# Replace /swtndx/icons/ with /swtndx/icons_fugue/ and adjust +IconHeight and +IconWidth
+	# if you want 16x16px sized icons
 	DefaultIcon      /swtndx/icons/document.png
 	AddIcon          /swtndx/icons/blank.png        ^^BLANKICON^^
 	AddIcon          /swtndx/icons/folder.png       ^^DIRECTORY^^
@@ -75,7 +77,7 @@
 	AddIcon          /swtndx/icons/ics.png          .ics
 	AddIcon          /swtndx/icons/vcf.png          .vcf
 	AddIcon          /swtndx/icons/flv.png          .flv .swf
-	AddIcon          /swtndx/icons/image.png        .ai .svg .eps .gif .bmp .tiff .tif .png .jpg .jpeg
+	AddIcon          /swtndx/icons/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
 	AddIcon          /swtndx/icons/package.png      .zip .rar .bz .tar .rpm .dmg
 	AddIcon          /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
 	AddIcon          /swtndx/icons/plugin.png       .safariextz

@@ -20,7 +20,8 @@ Features
 Included Stylesheets
 --------------------
 
-- Default (Based on Twitter Bootstrap)
+- Minimal
+- Bootstrap (Based on Twitter Bootstrap)
 - Apple OS (Mimics Finder / iOS table view) *early beta, may not work in every browser!*
 - Uberspace (Inspired by <http://uberspace.de>) *beta*
 
@@ -67,6 +68,7 @@ If you consider yourself ready for the advanced installation, you should know wh
 Version History
 ---------------
 
+* v1.2 (20120229) Added a new default style sheet (Minimal) which is closer to the pre 1.0 default stylesheet and is smaller than the Bootstrap based one.
 * v1.1 (20120106) Added early draft for new stylesheet which mimics the Mac OS X Finder and iOS
 * v1.0 (20120104) re-release under new name, updated pretty much everything
 * v0.5 Intermezzo, rewrote most of it
