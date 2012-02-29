@@ -6,7 +6,7 @@
 	//Configuration
 	
 	//CSS filename (path relative to the swtndx folder)
-	$css = 'assets/default.min.css';
+	$css = 'assets/minimal.min.css';
 	
 	//Should readme files be displayed as aside content?
 	$show_readme = true; //set to false if not.
