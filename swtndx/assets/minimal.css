@@ -50,6 +50,23 @@ a img{
 	display: block;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	margin: 2.0em 0 0.5em;
+	font-weight: bold;
+}
+
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child{
+	margin-top: 0;
+}
+
+b,strong{
+	font-weight: bold;
+}
+
+em,i{
+	font-style: italic;
+}
+
 .breadcrumb{
 	margin: 0 0 1.5em;
 	font-weight: bold;
@@ -126,6 +143,7 @@ aside{
 	background: #edeff0;
 	padding: 1em 1.5em;
 	border-radius: 0.25em;
+	color: #5f6971;
 }
 
 footer, footer a{
