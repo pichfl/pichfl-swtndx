@@ -61,30 +61,45 @@
 	# Hide some files which should not show up in the listing.
 	# You can also add your own entries, but remember this setting 
 	# will be inherited by all subfolders (as all of these settings)
-	IndexIgnore      robots.txt swtndx
+	IndexIgnore     robots.txt swtndx
 
 	# Icons
 	# Replace /swtndx/icons/ with /swtndx/icons_fugue/ and adjust +IconHeight and +IconWidth
 	# if you want 16x16px sized icons
-	DefaultIcon      /swtndx/icons/document.png
-	AddIcon          /swtndx/icons/blank.png        ^^BLANKICON^^
-	AddIcon          /swtndx/icons/folder.png       ^^DIRECTORY^^
-	AddIcon          /swtndx/icons/up.png ..
-	AddIconByType    /swtndx/icons/picture.png      image/*
-	AddIconByType    /swtndx/icons/document.png     text/*
-	AddIcon          /swtndx/icons/script.png       .js
-	AddIcon          /swtndx/icons/rtf.png          .rtf
-	AddIcon          /swtndx/icons/ics.png          .ics
-	AddIcon          /swtndx/icons/vcf.png          .vcf
-	AddIcon          /swtndx/icons/flv.png          .flv .swf
-	AddIcon          /swtndx/icons/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
-	AddIcon          /swtndx/icons/package.png      .zip .rar .bz .tar .rpm .dmg
-	AddIcon          /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
-	AddIcon          /swtndx/icons/plugin.png       .safariextz
-	AddIcon          /swtndx/icons/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
-	AddIcon          /swtndx/icons/rtf.png          .pdf .rtf .doc .docx
+	# DefaultIcon      /swtndx/icons_chalkwork/document.png
+	# AddIcon          /swtndx/icons_chalkwork/blank.png        ^^BLANKICON^^
+	# AddIcon          /swtndx/icons_chalkwork/folder.png       ^^DIRECTORY^^
+	# AddIcon          /swtndx/icons_chalkwork/up.png           ..
+	# AddIconByType    /swtndx/icons_chalkwork/picture.png      image/*
+	# AddIconByType    /swtndx/icons_chalkwork/document.png     text/*
+	# AddIcon          /swtndx/icons_chalkwork/script.png       .js
+	# AddIcon          /swtndx/icons_chalkwork/rtf.png          .rtf
+	# AddIcon          /swtndx/icons_chalkwork/ics.png          .ics
+	# AddIcon          /swtndx/icons_chalkwork/vcf.png          .vcf
+	# AddIcon          /swtndx/icons_chalkwork/flv.png          .flv .swf
+	# AddIcon          /swtndx/icons_chalkwork/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
+	# AddIcon          /swtndx/icons_chalkwork/package.png      .zip .rar .bz .tar .rpm .dmg
+	# AddIcon          /swtndx/icons_chalkwork/document.png     .mdown .md .markdown .js .txt .pages
+	# AddIcon          /swtndx/icons_chalkwork/plugin.png       .safariextz
+	# AddIcon          /swtndx/icons_chalkwork/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
+	# AddIcon          /swtndx/icons_chalkwork/rtf.png          .pdf .rtf .doc .docx
+	
+	DefaultIcon     /swtndx/icons/document.png
+	AddIcon         /swtndx/icons/blank.png        ^^BLANKICON^^
+	AddIcon         /swtndx/icons/folder.png       ^^DIRECTORY^^
+	AddIcon         /swtndx/icons/up.png           ..
+	AddIconByType   /swtndx/icons/picture.png      image/*
+	AddIconByType   /swtndx/icons/document.png     text/*
+	AddIcon         /swtndx/icons/script.png       .js .html
+	AddIcon         /swtndx/icons/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
+	AddIcon         /swtndx/icons/package.png      .zip .rar .bz .tar .rpm
+	AddIcon         /swtndx/icons/dmg.png          .dmg .safariextz
+	AddIcon         /swtndx/icons/document.png     .mdown .md .markdown .js .txt .pages
+	AddIcon         /swtndx/icons/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
+	AddIcon         /swtndx/icons/rtf.png          .pdf .rtf .doc .docx .xls .xlsx
+	
 	
 	# Advanced: Fix symlinks - Uncomment only if you know what you are doing.
-	#Ooptions +FollowSymLinks
+	# Options +FollowSymLinks
 	
 </IfModule>
