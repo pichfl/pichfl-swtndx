@@ -45,8 +45,10 @@
 	IndexOptions    +XHTML
 	IndexOptions    +SuppressHTMLPreamble
 	IndexOptions    +HTMLTable
-	IndexOptions    +IconHeight=24
-	IndexOptions    +IconWidth=24
+	#IndexOptions    +IconHeight=24
+	#IndexOptions    +IconWidth=24
+	IndexOptions    +IconHeight=16
+	IndexOptions    +IconWidth=16
 	IndexOptions    +IconsAreLinks
 	IndexOptions    +Charset=UTF-8
 
@@ -66,23 +68,24 @@
 	# Icons
 	# Replace /swtndx/icons/ with /swtndx/icons_fugue/ and adjust +IconHeight and +IconWidth
 	# if you want 16x16px sized icons
-	# DefaultIcon      /swtndx/icons_chalkwork/document.png
-	# AddIcon          /swtndx/icons_chalkwork/blank.png        ^^BLANKICON^^
-	# AddIcon          /swtndx/icons_chalkwork/folder.png       ^^DIRECTORY^^
-	# AddIcon          /swtndx/icons_chalkwork/up.png           ..
-	# AddIconByType    /swtndx/icons_chalkwork/picture.png      image/*
-	# AddIconByType    /swtndx/icons_chalkwork/document.png     text/*
-	# AddIcon          /swtndx/icons_chalkwork/script.png       .js
-	# AddIcon          /swtndx/icons_chalkwork/rtf.png          .rtf
-	# AddIcon          /swtndx/icons_chalkwork/ics.png          .ics
-	# AddIcon          /swtndx/icons_chalkwork/vcf.png          .vcf
-	# AddIcon          /swtndx/icons_chalkwork/flv.png          .flv .swf
-	# AddIcon          /swtndx/icons_chalkwork/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
-	# AddIcon          /swtndx/icons_chalkwork/package.png      .zip .rar .bz .tar .rpm .dmg
-	# AddIcon          /swtndx/icons_chalkwork/document.png     .mdown .md .markdown .js .txt .pages
-	# AddIcon          /swtndx/icons_chalkwork/plugin.png       .safariextz
-	# AddIcon          /swtndx/icons_chalkwork/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
-	# AddIcon          /swtndx/icons_chalkwork/rtf.png          .pdf .rtf .doc .docx
+
+	#DefaultIcon      /swtndx/icons_chalkwork/document.png
+	#AddIcon          /swtndx/icons_chalkwork/blank.png        ^^BLANKICON^^
+	#AddIcon          /swtndx/icons_chalkwork/folder.png       ^^DIRECTORY^^
+	#AddIcon          /swtndx/icons_chalkwork/up.png           ..
+	#AddIconByType    /swtndx/icons_chalkwork/picture.png      image/*
+	#AddIconByType    /swtndx/icons_chalkwork/document.png     text/*
+	#AddIcon          /swtndx/icons_chalkwork/script.png       .js
+	#AddIcon          /swtndx/icons_chalkwork/rtf.png          .rtf
+	#AddIcon          /swtndx/icons_chalkwork/ics.png          .ics
+	#AddIcon          /swtndx/icons_chalkwork/vcf.png          .vcf
+	#AddIcon          /swtndx/icons_chalkwork/flv.png          .flv .swf
+	#AddIcon          /swtndx/icons_chalkwork/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
+	#AddIcon          /swtndx/icons_chalkwork/package.png      .zip .rar .bz .tar .rpm .dmg
+	#AddIcon          /swtndx/icons_chalkwork/document.png     .mdown .md .markdown .js .txt .pages
+	#AddIcon          /swtndx/icons_chalkwork/plugin.png       .safariextz
+	#AddIcon          /swtndx/icons_chalkwork/audio.png        .mp3 .m4a .m4b .m4r .wav .midi .ogg .flac .aiff
+	#AddIcon          /swtndx/icons_chalkwork/rtf.png          .pdf .rtf .doc .docx
 	
 	DefaultIcon     /swtndx/icons/document.png
 	AddIcon         /swtndx/icons/blank.png        ^^BLANKICON^^
