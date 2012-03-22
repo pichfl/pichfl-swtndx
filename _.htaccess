@@ -73,7 +73,7 @@
 	#AddIcon          /swtndx/icons_chalkwork/blank.png        ^^BLANKICON^^
 	#AddIcon          /swtndx/icons_chalkwork/folder.png       ^^DIRECTORY^^
 	#AddIcon          /swtndx/icons_chalkwork/up.png           ..
-	#AddIconByType    /swtndx/icons_chalkwork/picture.png      image/*
+	#AddIconByType    /swtndx/icons_chalkwork/image.png      image/*
 	#AddIconByType    /swtndx/icons_chalkwork/document.png     text/*
 	#AddIcon          /swtndx/icons_chalkwork/script.png       .js
 	#AddIcon          /swtndx/icons_chalkwork/rtf.png          .rtf
@@ -91,7 +91,7 @@
 	AddIcon         /swtndx/icons/blank.png        ^^BLANKICON^^
 	AddIcon         /swtndx/icons/folder.png       ^^DIRECTORY^^
 	AddIcon         /swtndx/icons/up.png           ..
-	AddIconByType   /swtndx/icons/picture.png      image/*
+	AddIconByType   /swtndx/icons/image.png        image/*
 	AddIconByType   /swtndx/icons/document.png     text/*
 	AddIcon         /swtndx/icons/script.png       .js .html
 	AddIcon         /swtndx/icons/image.png        .ai .svg .e.gif .bmp .tiff .tif .png .jpg .jpeg
